@@ -1,19 +1,19 @@
 import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
+import Features from "./Components/Features";
+import Footer from "./Components/Footer";
 
 const App = () => {
-
-  {/* const [loading, setLoading] = useState(true); */}
-
   return (
-    <div className="dark:bg-black relative">
-      {/*{loading ? <Loader /> : ( */}
-        
-        <>
-          <Navbar />
-        </>
-
-      {/* )} */}
-      {/* <CookieConsent /> */}
+    <div className="dark:bg-black relative bg-white">
+      <Navbar />
+      <main id="home">
+        <Hero />
+        <About />
+        <Features />
+      </main>
+      <Footer />
     </div>
   );
 };
