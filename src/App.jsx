@@ -3,6 +3,7 @@ import Footer from "./Components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Prayer from "./Pages/Prayer";
+import PrayerTagline from "./Components/PrayerTagline";
 
 const App = () => {
   return (
