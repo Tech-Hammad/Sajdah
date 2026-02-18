@@ -19,7 +19,7 @@ const PrayerTagline = () => {
                 return (
                     <div
                         key={index}
-                        className={`w-48 h-[300px] rounded-b-[120px] rounded-t-2xl 
+                        className={`w-48 h-[300px] rounded-b-[120px] rounded-t-3xl 
             flex flex-col items-center justify-between py-6 px-4 
             shadow-md border transition-all duration-100
             green-fill-hover

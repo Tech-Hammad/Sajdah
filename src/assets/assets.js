@@ -19,6 +19,18 @@ import namaz_Icon_4 from './namaz-time-icon-4.png';
 import namaz_Icon_5 from './namaz-time-icon-5.png';
 import namaz_Icon_6 from './namaz-time-icon-6.png';
 
+import phone from './phone.svg';
+import mail from './mail.svg';
+import location from './location.svg';
+import angle_right from './angle-right.png';
+import footer_img from './footer_img.jpg';
+
+import facebook from './facebook.png';
+import github from './github.png';
+import linkedin from './linkedin.png';
+import google from './google.png';
+
+
 const assets = {
   logo,
   logo_dark,
@@ -31,7 +43,13 @@ const assets = {
   hero_img,
   hero_img_2,
   about_img,
-  dropdown_icon
+  dropdown_icon,
+  phone,
+  mail,
+  location,
+  angle_right,
+  footer_img,
+  facebook
 };
 
 export const namazIcons = {
@@ -41,6 +59,13 @@ export const namazIcons = {
   namaz_Icon_4,
   namaz_Icon_5,
   namaz_Icon_6
+}
+
+export const socialIcons = {
+  facebook,
+  github,
+  linkedin,
+  google
 }
 
 export default assets;
