@@ -1,18 +1,19 @@
 import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import About from "./Components/About";
-import Features from "./Components/Features";
 import Footer from "./Components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Prayer from "./Pages/Prayer";
 
 const App = () => {
   return (
     <div className="dark:bg-black relative bg-white">
-      <Navbar />
-      <main id="home">
-        <Hero />
-        <About />
-        <Features />
-      </main>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/prayer" element={<Prayer />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   );

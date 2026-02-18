@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import assets from '../assets/assets';
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,11 +52,10 @@ const Navbar = () => {
       />
 
       <div
-        className={`text-white sm:text-sm ${
-          isMenuOpen
+        className={`text-white sm:text-sm ${isMenuOpen
             ? 'max-sm:w-60 max-sm:pl-10'
             : 'max-sm:w-0 max-sm:overflow-hidden'
-        } max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:flex-col max-sm:bg-primary max-sm:text-black max-sm:pt-20 flex sm:items-center gap-5 overflow-visible transition-all duration-300 ease-in-out`}
+          } max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:flex-col max-sm:bg-primary max-sm:text-black max-sm:pt-20 flex sm:items-center gap-5 overflow-visible transition-all duration-300 ease-in-out`}
       >
         <img
           src={assets.close_icon}
@@ -63,35 +64,11 @@ const Navbar = () => {
           onClick={closeMobileMenu}
         />
 
-        <a
-          href="#home"
-          onClick={closeMobileMenu}
-          className="sm:hover:border-b"
-        >
-          Home
-        </a>
-        <a
-          href="#salah-tracer"
-          onClick={closeMobileMenu}
-          className="sm:hover:border-b"
-        >
-          Salah Tracer
-        </a>
-        <a
-          href="#tasbeeh-counter"
-          onClick={closeMobileMenu}
-          className="sm:hover:border-b"
-        >
-          Tasbeeh Counter
-        </a>
-        <a
-          href="#qibla-finder"
-          onClick={closeMobileMenu}
-          className="sm:hover:border-b"
-        >
-          Qibla Finder
-        </a>
-
+        <Link to="/" onClick={closeMobileMenu}>Home</Link>
+        <Link to="/Prayer" onClick={closeMobileMenu}>Salah Tracker</Link>
+        <Link to="/" onClick={closeMobileMenu}>Tasbeeh Counter</Link>
+        <Link to="/" onClick={closeMobileMenu}>Qibla Finder</Link>
+        
         {/* Dropdown */}
         <div className="relative" ref={dropdownRef}>
           <button
@@ -111,9 +88,8 @@ const Navbar = () => {
           </button>
 
           <div
-            className={`absolute right-0 mt-2 w-48 bg-white text-gray-900 rounded-xl shadow-lg py-2 z-30 dark:bg-gray-900 dark:text-white border border-gray-100 dark:border-gray-700 ${
-              isDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
-            } transition-all duration-200`}
+            className={`absolute right-0 mt-2 w-48 bg-white text-gray-900 rounded-xl shadow-lg py-2 z-30 dark:bg-gray-900 dark:text-white border border-gray-100 dark:border-gray-700 ${isDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
+              } transition-all duration-200`}
           >
             <a
               href="#prayer"

@@ -12,6 +12,13 @@ import hero_img_2 from './hero_img_2.png';
 import about_img from './about_img.jpg';
 import dropdown_icon from './dropdown_icon.svg';
 
+import namaz_Icon_1 from './namaz-time-icon-1.png';
+import namaz_Icon_2 from './namaz-time-icon-2.png';
+import namaz_Icon_3 from './namaz-time-icon-3.png';
+import namaz_Icon_4 from './namaz-time-icon-4.png';
+import namaz_Icon_5 from './namaz-time-icon-5.png';
+import namaz_Icon_6 from './namaz-time-icon-6.png';
+
 const assets = {
   logo,
   logo_dark,
@@ -26,5 +33,14 @@ const assets = {
   about_img,
   dropdown_icon
 };
+
+export const namazIcons = {
+  namaz_Icon_1,
+  namaz_Icon_2,
+  namaz_Icon_3,
+  namaz_Icon_4,
+  namaz_Icon_5,
+  namaz_Icon_6
+}
 
 export default assets;
