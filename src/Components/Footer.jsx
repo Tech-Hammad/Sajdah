@@ -114,7 +114,7 @@ const Footer = () => {
 
       <div className="border-t border-white-800 py-4 px-6 flex flex-col md:flex-row justify-between text-sm text-white-300">
         <p>Copyright © Sajdah {date}. All rights reserved.</p>
-        <a href="#" className="hover:text-yellow-400 cursor-pointer">Developer Github Repository Link</a>
+        <a href="https://github.com/Tech-Hammad/Sajdah" className="hover:text-yellow-400 cursor-pointer">Developer Github Repository Link</a>
         <div className="flex gap-6 mt-2 md:mt-0">
           <span className="hover:text-yellow-400 cursor-pointer">Terms and Conditions</span>
           <span className="hover:text-yellow-400 cursor-pointer">Privacy Policy</span>

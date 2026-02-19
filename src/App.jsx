@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Prayer from "./Pages/Prayer";
 import PrayerTagline from "./Components/PrayerTagline";
 import Header from "./Components/Header";
+import TasbeehCounter from "./Pages/TasbeehCounter";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/prayer" element={<Prayer />} />
+          <Route path="/TasbeehCounter" element={<TasbeehCounter />} />
         </Routes>
       </BrowserRouter>
       <Footer />
