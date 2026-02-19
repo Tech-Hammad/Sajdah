@@ -4,7 +4,7 @@ import { namazIcons } from '../assets/assets';
 const prayers = [
     { name: "Fajr", time: "3:24 AM", iqamah: "4:15 AM", icon: namazIcons.namaz_Icon_1 },
     { name: "Zuhr", time: "01:09 PM", iqamah: "1:30 PM", icon: namazIcons.namaz_Icon_2 },
-    { name: "Asr", time: "6:29 PM", iqamah: "7:30 PM", icon: namazIcons.namaz_Icon_3, active: true },
+    { name: "Asr", time: "6:29 PM", iqamah: "7:30 PM", icon: namazIcons.namaz_Icon_3, },
     { name: "Magrib", time: "9:01 PM", iqamah: "9:01 PM", icon: namazIcons.namaz_Icon_4 },
     { name: "Isha", time: "10:10 PM", iqamah: "10:45 PM", icon: namazIcons.namaz_Icon_5 },
     { name: "Jummah", time: "01:10 PM", iqamah: "02:45 PM", icon: namazIcons.namaz_Icon_6 },

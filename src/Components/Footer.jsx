@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="font-semibold">Phone No:</p>
-              <p>+92 (300) 1234 567</p>
+              <p className="hover:text-yellow-400 cursor-pointer transition">+92 (300) 1234 567</p>
             </div>
           </div>
 
@@ -77,7 +77,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="font-semibold">Email Address:</p>
-              <p>info.Sajdah@gmail.com</p>
+              <p className="hover:text-yellow-400 cursor-pointer transition">info.Sajdah@gmail.com</p>
             </div>
           </div>
 
@@ -87,7 +87,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="font-semibold">Address:</p>
-              <p>123 Iqbal Town, Lahore, Pakistan</p>
+              <p className="hover:text-yellow-400 cursor-pointer transition">123 Iqbal Town, Lahore, Pakistan</p>
             </div>
           </div>
         </div>
