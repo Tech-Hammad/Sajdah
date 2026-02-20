@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-// Coordinates of the Kaaba in Mecca
+// Coordinates of the Kaaba 
 const MECCA_LAT = 21.4225;
 const MECCA_LON = 39.8262;
 
@@ -34,9 +34,9 @@ const QiblaFinder = () => {
     return bearing;
   };
 
-  // Calculate distance between two points (Haversine formula)
+  // Calculate distance between two points
   const calculateDistance = (lat1, lon1, lat2, lon2) => {
-    const R = 6371; // Earth's radius in kilometers
+    const R = 6371; 
     const dLat = ((lat2 - lat1) * Math.PI) / 180;
     const dLon = ((lon2 - lon1) * Math.PI) / 180;
     const a =
@@ -105,7 +105,7 @@ const QiblaFinder = () => {
     );
   }, []);
 
-  // Device orientation (compass) handling
+  // Device orientation
   useEffect(() => {
     if (!window.DeviceOrientationEvent) {
       setCompassPermission('unsupported');
@@ -114,12 +114,10 @@ const QiblaFinder = () => {
 
     const handleOrientation = (event) => {
       if (event.alpha !== null) {
-        // alpha is the compass direction (0-360)
         setDeviceHeading(event.alpha);
       }
     };
 
-    // Request permission for iOS 13+
     if (typeof DeviceOrientationEvent.requestPermission === 'function') {
       DeviceOrientationEvent.requestPermission()
         .then((response) => {

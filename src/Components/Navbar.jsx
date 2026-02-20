@@ -64,10 +64,10 @@ const Navbar = () => {
           onClick={closeMobileMenu}
         />
 
-        <Link to="/" onClick={closeMobileMenu} className='hover:text-yellow-400 transition'>Home</Link>
-        <Link to="/Prayer" onClick={closeMobileMenu} className='hover:text-yellow-400 transition'>Salah Tracker</Link>
-        <Link to="/TasbeehCounter" onClick={closeMobileMenu} className='hover:text-yellow-400 transition'>Tasbeeh Counter</Link>
-        <Link to="/QiblaFinder" onClick={closeMobileMenu} className='hover:text-yellow-400 transition'>Qibla Finder</Link>
+        <Link to="/" onClick={closeMobileMenu} className='hover:text-black-400 transition'>Home</Link>
+        <Link to="/Prayer" onClick={closeMobileMenu} className='hover:text-black-400 transition'>Salah Tracker</Link>
+        <Link to="/TasbeehCounter" onClick={closeMobileMenu} className='hover:text-black-400 transition'>Tasbeeh Counter</Link>
+        <Link to="/QiblaFinder" onClick={closeMobileMenu} className='hover:text-black-400 transition'>Qibla Finder</Link>
         
         {/* Dropdown */}
         <div className="relative" ref={dropdownRef}>
