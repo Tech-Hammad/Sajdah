@@ -22,7 +22,7 @@ const Footer = () => {
           <h2 className="text-2xl font-serif mb-4">Connect with us</h2>
           <div className="flex justify-center gap-4">
             {[socialIcons.facebook, socialIcons.github, socialIcons.google, socialIcons.linkedin].map((icon, i) => (
-              <div key={i} className="w-12 h-12 border-2 border-yellow-400 rounded-full flex items-center justify-center hover:bg-yellow-400 transition">
+              <div key={i} className="w-12 h-12 border-2 border-yellow-400 rounded-full flex items-center justify-center hover:bg-yellow-400 transition cursor-pointer">
                 <img src={icon} className="w-5 h-5" />
               </div>
             ))}
