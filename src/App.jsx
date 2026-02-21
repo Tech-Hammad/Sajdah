@@ -8,6 +8,7 @@ import TasbeehCounter from "./Pages/TasbeehCounter";
 import QiblaFinder from "./Pages/QiblaFinder";
 import Loader from "./Components/Loader";
 import { useState, useEffect } from "react";
+import CookieConsent from "./Components/CookiesConsent";
 
 const App = () => {
 
@@ -33,8 +34,10 @@ const App = () => {
               <Route path="/QiblaFinder" element={<QiblaFinder />} />
             </Routes>
           </BrowserRouter>
-          <Footer />
+          <CookieConsent />
+          <Footer />    
         </>)}
+        
     </div>
   );
 };
