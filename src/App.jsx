@@ -24,12 +24,12 @@ const App = () => {
     <div className="dark:bg-black relative bg-white">
       {loading ? <Loader /> : (
         <>
-          <BrowserRouter>
+          <BrowserRouter basename="/Sajdah">
             <Header />
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/prayer" element={<Prayer />} />
+              <Route path="/Prayer" element={<Prayer />} />
               <Route path="/TasbeehCounter" element={<TasbeehCounter />} />
               <Route path="/QiblaFinder" element={<QiblaFinder />} />
             </Routes>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sajdah - Islamic App</title>
+  </head>
+  <body>
+    <script>
+      // Single Page Apps for GitHub Pages
+      // This script handles 404 redirects for React Router with base path
+      (function() {
+        var pathSegmentsToKeep = 1; // Keep /Sajdah segment
+        var l = window.location;
+        var basePath = '/Sajdah';
+        
+        // Extract the path after the base path
+        var path = l.pathname;
+        if (path.startsWith(basePath)) {
+          path = path.slice(basePath.length);
+        }
+        
+        // Build redirect URL
+        var redirectPath = basePath + '/index.html';
+        if (path && path !== '/' && path !== '/index.html') {
+          redirectPath += '?/' + path.slice(1).replace(/&/g, '~and~');
+        }
+        if (l.search) {
+          redirectPath += (redirectPath.includes('?') ? '&' : '?') + l.search.slice(1).replace(/&/g, '~and~');
+        }
+        if (l.hash) {
+          redirectPath += l.hash;
+        }
+        
+        window.location.replace(redirectPath);
+      })();
+    </script>
+  </body>
+</html>
