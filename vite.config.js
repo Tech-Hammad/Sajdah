@@ -8,6 +8,7 @@ export default defineConfig({
     tailwindcss(),
     react({
       babel: {
+        base: "/Sajdah/",
         plugins: [['babel-plugin-react-compiler']],
       },
     }),
